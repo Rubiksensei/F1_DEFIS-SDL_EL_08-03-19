@@ -1,0 +1,32 @@
+--- Déroulement du défis ---
+
+Une installation de la bibliothèque SDL2 faite dans la douleur (moultes tentatives d'installation, finalement réussie seulement le 01/03/2019).
+
+Un développepement sur l'éditeur FPC fait dans la douleur (1. Suppression intempestive du code à l'ouverture de FPC, 2. Crash régulier de FPC, 3. Bug de compilation nécessitant un redémarrage de FPC ramenant au petit 1., 4. Bug d'execution du programme nécessitant un redémarrage de FPC ramenant au petit 1.,  5. Des erreurs de lecture du fichier .pas nécessitant une réinstallation complète de FPC).
+
+Un agacement, une frustration, des migraines et des insomnies provoqué par la découverte d'un nouvel outil très complet rendu difficile à aborder et comprendre à cause de ces divers problèmes.
+
+Un passage sur l'éditeur VS Code devenu possible en déplacant les fichiers et les librairies de SDL2 dans le même répertoires que le fichier .pas .
+
+Suivie du tutoriel et développement enfin possible dans des conditions de travail convenable.
+
+
+--- Défis ---
+
+- Différence entre SDL et SDL2 :
+
+Depuis la version SDL2 (2.0.0), l’accélération matérielle est possible, la licence a changé pour une licence Zlib au lieu de la LGPL et certains systèmes ne sont plus compatibles.
+
+La verison suivante (2.0.6) ajoute un support multiplateforme de l'API graphique Vulkan, des modes de blends permettant la gestion de composition 2D, le support de nouveaux contrôles de jeu, une fonction de détection pour l’architecture ARM, une fonction de copie de surface, un support expérimental du pilote audio JACK, et des fonctions de rééchantillonnage sonore et de changement d'échelle graphique.
+
+- Pourquoi utiliser SDL_Image
+
+On doit utiliser SDL_Image pour pouvoir gérer des images car, nativement, SDL ne gère que les formats bitmap. Sans SDL_Image, on ne peut pas gérer les png, les jpeg, les gif, etc.
+
+--- Programme rendu ---
+
+Le programme suit ce chemin relatif : ./Code/defisSDL.pas
+Les éléments fournis se trouvent dans le dossier Misc.
+L'archive SDL2 contient uniquement les fichiers et librairies SDL en cas de mauvaises manipulations dans le dossier Code.
+Ces fichiers et librairies sont également présent dans le dossier Code.
+Ils sont nécessaires dans le même dossier que là où se trouve le programme à compiler.
